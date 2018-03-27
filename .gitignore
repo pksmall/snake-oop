@@ -3,3 +3,6 @@
 ################################################################################
 
 /Snake/Snake/bin/Debug
+/Snake/Snake/obj/Debug
+/Snake/.vs/Snake/v15/Server/sqlite3
+/Snake/.vs/Snake/v15/.suo
