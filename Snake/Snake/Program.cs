@@ -27,14 +27,12 @@ namespace Snake
             yLine2.Draw();
 
             // отрисовка точек
-            Point p1 = new Point(1, 3, '*');
-            p1.Draw();
+            Point p = new Point(4, 5, '*');
 
-            Point p2 = new Point(4, 5, '#');
-            p2.Draw();
+            Snake snake = new Snake(p, 4, Direction.RIGHT);
+            snake.Draw();
 
             Console.ReadLine();
         }
-
     }
 }
