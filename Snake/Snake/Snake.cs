@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Snake
@@ -42,6 +43,29 @@ namespace Snake
             nextPoint.Move(1, direction);
 
             return nextPoint;
+        }
+
+        public void HandleKey(ConsoleKey key)
+        {
+            if (key == ConsoleKey.LeftArrow)
+            {
+                direction = Direction.LEFT;
+            }
+            else if (key == ConsoleKey.RightArrow)
+            {
+                direction = Direction.RIGHT;
+            }
+            else if (key == ConsoleKey.UpArrow)
+            {
+                direction = Direction.UP;
+            }
+            else if (key == ConsoleKey.DownArrow)
+            {
+                direction = Direction.DOWN;
+            }
+            Thread.Sleep(100);
+            Move();
+
         }
     }
 }
